@@ -1,0 +1,21 @@
+server:
+  port: 8070
+spring:
+  cloud:
+    config:
+      # 允许使用java -Dxxx=yyy,来覆盖远程属性，例如:java -Dserver.port=8071
+      overrideSystemProperties: false
+  # 和spring-cloud-starter-bus-amqp配合,用于/bus/refresh分布式服务属性刷新
+  rabbitmq:
+    host: 192.168.5.29
+    port: 5672
+    username: admin
+    password: Rabbitmq-401
+eureka:
+  instance: 
+    # 当建立eureka集群时必须使用基于主机名方式(不能直接使用ip地址),相应的要修改linux的/etc/hosts文件
+    hostname: eureka1
+  client:
+    service-url:
+      # 两个eureka组成集群
+      defaultZone: http://sc-eureka:veDSJeUX-JSxkWrk@eureka1:8070/eureka/,http://sc-eureka:veDSJeUX-JSxkWrk@eureka2:8071/eureka/
