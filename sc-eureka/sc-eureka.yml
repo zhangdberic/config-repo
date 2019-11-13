@@ -1,1 +1,8 @@
+# 开启安全认证    
+security:
+  basic:
+    enabled: true
+  user:
+    name: sc-eureka
+    password: veDSJeUX-JSxkWrk
 
