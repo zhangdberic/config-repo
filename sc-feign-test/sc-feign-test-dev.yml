@@ -51,7 +51,7 @@ feign:
        readTimeout: 5000    
        # 请求拦截器
        requestInterceptors: 
-         - feign.auth.BasicAuthRequestInterceptor
+         - com.sc.feign.controller.FeignBasicAuthRequestInterceptor
 
 
        
