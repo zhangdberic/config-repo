@@ -34,8 +34,7 @@ eureka:
 # 日志    
 logging:
   level:
-    root: INFO
-    org.springframework.web.client: DEBUG
+    root: DEBUG
 # feign自定义配置
 feign: 
   client: 
