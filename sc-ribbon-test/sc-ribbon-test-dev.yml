@@ -37,6 +37,6 @@ logging:
     root: INFO
 # 配置ribbon属性
 # 1.测试随机负载均衡
-sc-sampleservice:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#sc-sampleservice:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
