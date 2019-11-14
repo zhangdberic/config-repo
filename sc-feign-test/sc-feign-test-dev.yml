@@ -1,5 +1,5 @@
 server:
-  port: 8003
+  port: 8005
 # 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
 management:
   security:
