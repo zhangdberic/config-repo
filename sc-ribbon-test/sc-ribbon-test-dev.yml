@@ -41,7 +41,7 @@ logging:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 # 2.测试启动加载(默认延时加载)ribbon服务调用上下文,如果有多个服务则用逗号加空格分隔(例如:s1, s2, s3)
-ribbon: 
-  eager-load: 
-   enabled: true
-   clients: sc-sampleservice
+#ribbon: 
+#  eager-load: 
+#   enabled: true
+#   clients: sc-sampleservice
