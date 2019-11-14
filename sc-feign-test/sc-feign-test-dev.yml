@@ -43,12 +43,7 @@ feign:
       default: 
         connectTimeout: 1000
         readTimeout: 4000
-      # 定义调用某个服务的feign设置,
-      sc-sampleservice: 
-       # 配置连接超时时间(毫秒)
-       connectTimeout: 5000
-       # 读取超时时间(毫秒)
-       readTimeout: 5000
+
        
       
     
