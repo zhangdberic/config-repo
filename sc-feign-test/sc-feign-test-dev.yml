@@ -49,6 +49,8 @@ feign:
        connectTimeout: 5000
        # 读取超时时间(毫秒)
        readTimeout: 5000    
+       # 日志
+       loggerLevel: full
        # 请求拦截器
        requestInterceptors: 
          - com.sc.feign.controller.FeignBasicAuthRequestInterceptor
