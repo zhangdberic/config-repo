@@ -44,4 +44,4 @@ logging:
 ribbon: 
   eager-load: 
    enabled: true
-   clients: *
+   clients: sc-sampleservice
