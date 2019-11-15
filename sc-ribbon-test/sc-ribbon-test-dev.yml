@@ -55,7 +55,7 @@ sc-sampleservice:
     #ReadTimeout: 4000
 # 2.配置全局的ribbon属性
 ribbon: 
-  ReadTimeout: 4000
+  readTimeout: 4000
 # NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 # 3.测试启动加载(默认延时加载)ribbon服务调用上下文,如果有多个服务则用逗号加空格分隔(例如:s1, s2, s3)
 #ribbon: 
