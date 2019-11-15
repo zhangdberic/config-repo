@@ -9,6 +9,10 @@ spring:
   cloud:
     config:
       overrideSystemProperties: false
+    # 关闭除zuul所有的请求重试
+    loadbalancer: 
+      retry: 
+        enabled: false
   # 和spring-cloud-starter-bus-amqp配合,用于/bus/refresh分布式服务属性刷新
   rabbitmq:
     host: 192.168.5.29
@@ -18,7 +22,7 @@ spring:
   # spring boot devtools  
   devtools:
     restart:
-      enabled: false    
+      enabled: false   
 # eureka客户端    
 eureka:
   client:
