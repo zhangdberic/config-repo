@@ -41,8 +41,8 @@ logging:
     root: INFO
 # 配置ribbon属性
 # 1.配置某个服务的ribbon属性
-sc-sampleservice:
-  ribbon:
+#sc-sampleservice:
+#  ribbon:
     # 测试随机负载均衡 
     #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
     # 同一个实例最大重试测试，不包括首次调用
