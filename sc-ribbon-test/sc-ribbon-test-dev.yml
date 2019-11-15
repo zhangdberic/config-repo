@@ -58,6 +58,8 @@ sc-sampleservice:
 ribbon: 
   ReadTimeout: 1000
   ConnectTimeout: 1000
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 1000
+
 # NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 # 3.测试启动加载(默认延时加载)ribbon服务调用上下文,如果有多个服务则用逗号加空格分隔(例如:s1, s2, s3)
 #ribbon: 
