@@ -43,9 +43,8 @@ logging:
 # 1.配置某个服务的ribbon属性
 sc-sampleservice: 
   ribbon: 
-    http:
-      client:
-        enabled: true
+    restclient: 
+      enabled: true
     # 测试随机负载均衡 
     #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
     # 同一个实例最大重试测试，不包括首次调用
@@ -59,9 +58,8 @@ sc-sampleservice:
     ConnectTimeout: 1000
 # 2.配置全局的ribbon属性
 ribbon: 
-  http:
-    client:
-      enabled: true
+  restclient:
+    enabled: true
   ReadTimeout: 1000
   ConnectTimeout: 1000
 # NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
