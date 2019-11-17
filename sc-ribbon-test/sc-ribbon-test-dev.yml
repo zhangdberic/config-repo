@@ -54,13 +54,13 @@ sc-sampleservice:
     # 是否所有的操作都进行重试(默认只有GET请求开启重试，POST请求关闭重试)，默认为false
     #OkToRetryOnAllOperations: true
     # 读取超时时间设置(毫秒)
-    ReadTimeout: 1000
+    ReadTimeout: 3000
     ConnectTimeout: 1000
 # 2.配置全局的ribbon属性
 ribbon: 
   restclient:
     enabled: true
-  ReadTimeout: 1000
+  ReadTimeout: 2000
   ConnectTimeout: 1000
 # NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 # 3.测试启动加载(默认延时加载)ribbon服务调用上下文,如果有多个服务则用逗号加空格分隔(例如:s1, s2, s3)
