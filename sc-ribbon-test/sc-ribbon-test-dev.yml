@@ -41,10 +41,10 @@ logging:
     root: INFO
 # 配置ribbon属性
 # 1.配置某个服务的ribbon属性
-#sc-sampleservice: 
-#  ribbon: 
-#    restclient: 
-#      enabled: true
+sc-sampleservice: 
+  ribbon: 
+    restclient: 
+      enabled: true
     # 测试随机负载均衡 
     #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
     # 同一个实例最大重试测试，不包括首次调用
@@ -54,8 +54,8 @@ logging:
     # 是否所有的操作都进行重试(默认只有GET请求开启重试，POST请求关闭重试)，默认为false
     #OkToRetryOnAllOperations: true
     # 读取超时时间设置(毫秒)
-    #ReadTimeout: 1000
-    #ConnectTimeout: 1000
+    ReadTimeout: 1000
+    ConnectTimeout: 1000
 # 2.配置全局的ribbon属性
 ribbon: 
   restclient:
