@@ -48,9 +48,9 @@ sc-sampleservice:
     # 测试随机负载均衡 
     #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
     # 同一个实例最大重试测试，不包括首次调用
-    MaxAutoRetries: 1
+    MaxAutoRetries: 0
     # 重试其它实例的最大次数(例如:部署了同一个服务3个实例,此处应该设置为2）,不包括首次调用所选的实例
-    MaxAutoRetriesNextServer: 1
+    MaxAutoRetriesNextServer: 0
     # 是否所有的操作都进行重试(默认只有GET请求开启重试，POST请求关闭重试)，默认为false
     #OkToRetryOnAllOperations: true
     # 读取超时时间设置(毫秒)
