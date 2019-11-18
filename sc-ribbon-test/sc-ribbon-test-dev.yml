@@ -54,7 +54,7 @@ sc-sampleservice:
     # 是否所有的操作都进行重试(默认只有GET请求开启重试，POST请求关闭重试)，默认为false
     #OkToRetryOnAllOperations: true
     # 读取超时时间设置(毫秒)
-    ReadTimeout: 10000
+    ReadTimeout: 3000
     ConnectTimeout: 1000
 # 2.配置全局的ribbon属性
 ribbon: 
