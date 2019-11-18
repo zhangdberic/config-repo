@@ -43,6 +43,18 @@ feign:
       default: 
         connectTimeout: 1000
         readTimeout: 3000
+  # 压缩
+  compression:
+    request:
+      enalbed: true
+      mime-types:
+      - text/xml
+      - application/xml
+      - application/json
+      min-request-size: 1024
+    response: 
+      enabled: true
+
       # 定义调用某个服务的feign设置,
       sc-sampleservice: 
        # 配置连接超时时间(毫秒)
@@ -54,6 +66,7 @@ feign:
        # 请求拦截器
        requestInterceptors: 
          - com.sc.feign.controller.FeignBasicAuthRequestInterceptor
+       
 
 # 配置ribbon属性
 # 1.配置某个服务的ribbon属性
