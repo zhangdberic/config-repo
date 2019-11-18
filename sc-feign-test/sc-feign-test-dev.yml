@@ -48,7 +48,7 @@ feign:
        # 配置连接超时时间(毫秒)
        connectTimeout: 5000
        # 读取超时时间(毫秒)
-       readTimeout: 4000    
+       readTimeout: 5000    
        # 日志
        loggerLevel: full
        # 请求拦截器
@@ -65,7 +65,7 @@ sc-sampleservice:
     #MaxAutoRetries: 0
     # 重试其它实例的最大次数(例如:部署了同一个服务3个实例,此处应该设置为2）,不包括首次调用所选的实例
     #MaxAutoRetriesNextServer: 0 
-    ReadTimeout: 5000
+    ReadTimeout: 4000
        
       
     
