@@ -51,7 +51,7 @@ feign:
   compression:
     # 请求压缩
     request:
-      enalbed: true
+      enabled: true
       mime-types:
       - text/xml
       - text/plain
