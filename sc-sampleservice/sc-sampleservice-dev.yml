@@ -1,5 +1,13 @@
 server:
   port: 8000
+  # 支持压缩
+  compression:
+    enabled: true
+    mime-types:
+    - text/xml
+    - text/plain
+    - application/xml
+    - application/json
 # 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
 management:
   security:
