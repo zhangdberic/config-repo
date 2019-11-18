@@ -49,6 +49,16 @@ feign:
         readTimeout: 3000
   # 压缩
   compression:
+    # 请求压缩
+    request:
+      enalbed: true
+      mime-types:
+      - text/xml
+      - text/plain
+      - application/xml
+      - application/json
+      min-request-size: 1024  
+    # 响应压缩  
     response: 
       enabled: true
 
