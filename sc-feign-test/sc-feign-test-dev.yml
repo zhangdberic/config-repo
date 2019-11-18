@@ -57,7 +57,7 @@ feign:
        # 配置连接超时时间(毫秒)
        connectTimeout: 5000
        # 读取超时时间(毫秒)
-       readTimeout: 5000    
+       readTimeout: 10000
        # 日志
        loggerLevel: full
        # 请求拦截器
