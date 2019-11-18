@@ -62,9 +62,9 @@ sc-sampleservice:
     restclient: 
       enabled: true  
     # 同一个实例最大重试测试，不包括首次调用
-    #MaxAutoRetries: 0
+    MaxAutoRetries: 1
     # 重试其它实例的最大次数(例如:部署了同一个服务3个实例,此处应该设置为2）,不包括首次调用所选的实例
-    #MaxAutoRetriesNextServer: 0 
+    MaxAutoRetriesNextServer: 1 
     ReadTimeout: 4000
        
       
