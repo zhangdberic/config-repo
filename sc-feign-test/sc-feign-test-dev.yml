@@ -34,7 +34,7 @@ eureka:
 # 日志    
 logging:
   level:
-    root: DEBUG
+    root: INFO
 # feign自定义配置
 feign: 
   client: 
