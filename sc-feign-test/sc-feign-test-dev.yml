@@ -49,8 +49,9 @@ feign:
       enalbed: true
       mime-types:
       - text/xml
+      - text/plain
       - application/xml
-      - application/json;charset=UTF-8
+      - application/json
       min-request-size: 1024
     response: 
       enabled: true
