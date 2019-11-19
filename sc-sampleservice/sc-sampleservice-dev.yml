@@ -48,7 +48,7 @@ spring:
       # 整个请求大小限制(1个请求可能包括多个上传文件)
       max-request-size: 20Mb
       # 单个文件大小限制
-      file-size-threshold: 10Mb
+      max-file-size: 10Mb
 # eureka客户端    
 eureka:
   client:
