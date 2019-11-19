@@ -39,6 +39,7 @@ eureka:
 logging:
   level:
     root: INFO
+    org.apache.http.wire: DEBUG
 # 配置ribbon属性
 # 1.配置某个服务的ribbon属性
 sc-sampleservice: 
