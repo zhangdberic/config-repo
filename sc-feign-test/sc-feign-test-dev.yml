@@ -47,9 +47,9 @@ feign:
   client: 
     config: 
       # 定义全局的feign设置
-      #default: 
-      #  connectTimeout: 1000
-      #  readTimeout: 3000
+      default: 
+        connectTimeout: 1000
+        readTimeout: 3000
       # 定义调用某个服务的feign设置,
       sc-sampleservice: 
         # 配置连接超时时间(毫秒)
@@ -61,7 +61,7 @@ feign:
         # 请求拦截器
         requestInterceptors: 
           - com.sc.feign.controller.FeignBasicAuthRequestInterceptor
-          - com.sc.feign.controller.GzipRequestInterceptor        
+          - com.sc.feign.controller.GzipRequestInterceptor
   # 压缩
   compression:
     # 请求压缩
