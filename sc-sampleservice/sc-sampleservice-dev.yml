@@ -9,6 +9,9 @@ server:
     - application/xml
     - application/json
     min-response-size: 1024
+  response: 
+    content-length: true
+  
 # 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
 management:
   security:
