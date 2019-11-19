@@ -76,6 +76,7 @@ feign:
        # 请求拦截器
        requestInterceptors: 
          - com.sc.feign.controller.FeignBasicAuthRequestInterceptor
+         - com.sc.feign.controller.GzipRequestInterceptor
        
 
 # 配置ribbon属性
