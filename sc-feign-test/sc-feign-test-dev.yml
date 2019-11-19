@@ -52,16 +52,16 @@ feign:
         readTimeout: 3000
       # 定义调用某个服务的feign设置,
       sc-sampleservice: 
-       # 配置连接超时时间(毫秒)
-       connectTimeout: 5000
-       # 读取超时时间(毫秒)
-       readTimeout: 10000
-       # 日志
-       loggerLevel: full
-       # 请求拦截器
-       requestInterceptors: 
-         - com.sc.feign.controller.FeignBasicAuthRequestInterceptor
-         - com.sc.feign.controller.GzipRequestInterceptor        
+        # 配置连接超时时间(毫秒)
+        connectTimeout: 5000
+        # 读取超时时间(毫秒)
+        readTimeout: 10000
+        # 日志
+        loggerLevel: full
+        # 请求拦截器
+        requestInterceptors: 
+          - com.sc.feign.controller.FeignBasicAuthRequestInterceptor
+          - com.sc.feign.controller.GzipRequestInterceptor        
   # 压缩
   compression:
     # 请求压缩
