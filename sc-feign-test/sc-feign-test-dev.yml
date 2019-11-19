@@ -62,18 +62,18 @@ feign:
         # 请求拦截器
         requestInterceptors: 
           - com.sc.feign.controller.FeignBasicAuthRequestInterceptor
-          - com.sc.feign.controller.GzipRequestInterceptor
+        #  - com.sc.feign.controller.GzipRequestInterceptor
   # 压缩
   compression:
     # 请求压缩
-    request:
-      enabled: true
-      mime-types:
-      - text/xml
-      - text/plain
-      - application/xml
-      - application/json;charset=UTF-8
-      min-request-size: 1024  
+    #request:
+    #  enabled: true
+    #  mime-types:
+    #  - text/xml
+    #  - text/plain
+    #  - application/xml
+    #  - application/json;charset=UTF-8
+    #  min-request-size: 1024  
     # 响应压缩  
     response: 
       enabled: true
