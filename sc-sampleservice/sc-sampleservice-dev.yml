@@ -43,11 +43,12 @@ spring:
     - classpath:sql/data.sql
     # sql脚本编码
     sql-script-encoding: utf-8
-  multipart: 
-    # 整个请求大小限制(1个请求可能包括多个上传文件)
-    max-request-size: 20Mb
-    # 单个文件大小限制
-    file-size-threshold: 10Mb
+  http:   
+    multipart: 
+      # 整个请求大小限制(1个请求可能包括多个上传文件)
+      max-request-size: 20Mb
+      # 单个文件大小限制
+      file-size-threshold: 10Mb
 # eureka客户端    
 eureka:
   client:
