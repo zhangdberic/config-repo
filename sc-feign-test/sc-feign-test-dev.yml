@@ -35,7 +35,7 @@ eureka:
 logging:
   level:
     root: INFO
-    org.apache.http.wire: DEBUG
+    okhttp3: DEBUG
 # feign自定义配置
 feign: 
   httpclient: 
