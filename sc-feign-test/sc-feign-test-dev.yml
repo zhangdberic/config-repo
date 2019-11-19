@@ -35,6 +35,8 @@ eureka:
 logging:
   level:
     root: INFO
+    # 日志输出apache httpclient的请求和响应日志
+    org.apache.http.wire: DEBUG
 # feign自定义配置
 feign: 
   httpclient: 
