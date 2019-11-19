@@ -19,11 +19,12 @@ spring:
   devtools:
     restart:
       enabled: false   
-  multipart: 
-    # 整个请求大小限制(1个请求可能包括多个上传文件)
-    max-request-size: 20MB
-    # 单个文件大小限制
-    file-size-threshold: 10MB      
+  http: 
+    multipart: 
+      # 整个请求大小限制(1个请求可能包括多个上传文件)
+      max-request-size: 20MB
+      # 单个文件大小限制
+      file-size-threshold: 10MB      
 # eureka客户端    
 eureka:
   client:
