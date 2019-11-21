@@ -1,0 +1,22 @@
+server:
+  port: 8100
+# 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
+management:
+  security:
+    enabled: false   
+# eureka客户端    
+eureka:
+  client:
+    service-url:
+      # 基于Basic的Security的访问eureka服务器
+      defaultZone: http://sc-eureka:veDSJeUX-JSxkWrk@192.168.5.78:8070/eureka/,http://sc-eureka:veDSJeUX-JSxkWrk@192.168.5.78:8071/eureka/
+    # 客户端监控检查(定时检查并发送健康状态到eureka服务器)  
+    healthcheck:
+      enabled: true
+  instance:
+    # 基于ip地址注册到eureka         
+    prefer-ip-address: true 
+# 日志    
+logging:
+  level:
+    root: INFO    
