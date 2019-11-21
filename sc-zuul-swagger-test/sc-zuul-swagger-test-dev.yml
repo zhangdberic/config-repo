@@ -30,4 +30,8 @@ eureka:
 # 日志    
 logging:
   level:
-    root: INFO    
+    root: INFO
+zuul:
+  routes:
+    sc-swagger-test:
+      path: /sc-swagger-test/**
