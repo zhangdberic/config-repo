@@ -4,6 +4,17 @@ server:
 management:
   security:
     enabled: false   
+spring:
+  # java -D属性可以覆盖本远程参数
+  cloud:
+    config:
+      overrideSystemProperties: false
+  # 和spring-cloud-starter-bus-amqp配合,用于/bus/refresh分布式服务属性刷新
+  rabbitmq:
+    host: 192.168.5.29
+    port: 5672
+    username: admin
+    password: Rabbitmq-401    
 # eureka客户端    
 eureka:
   client:
