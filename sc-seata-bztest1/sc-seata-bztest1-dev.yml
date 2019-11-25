@@ -29,6 +29,7 @@ spring:
     url: jdbc:oracle:thin:@//192.168.5.36:1521/dyitdb
     username: teps
     password: data
+    type: org.apache.commons.dbcp2.BasicDataSource
     dbcp2:
       test-while-idle: true
       validation-query: select 1 from dual
