@@ -32,6 +32,7 @@ spring:
     dbcp2:
       test-while-idle: true
       validation-query: select 1 from dual
+      default-auto-commit: false
   devtools:
     restart:
       enabled: false    
