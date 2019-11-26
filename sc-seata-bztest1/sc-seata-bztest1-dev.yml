@@ -30,7 +30,7 @@ spring:
     platform: oracle
     driver-class-name: oracle.jdbc.driver.OracleDriver
     url: jdbc:oracle:thin:@//192.168.5.36:1521/dyitdb
-    username: teps
+    username: seata1
     password: data
     type: org.apache.commons.dbcp2.BasicDataSource
     dbcp2:
