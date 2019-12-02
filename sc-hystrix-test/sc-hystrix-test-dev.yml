@@ -15,6 +15,10 @@ spring:
     port: 5672
     username: admin
     password: Rabbitmq-401    
+  # devtools
+  devtools: 
+    restart: 
+      enabled: false    
 # eureka客户端    
 eureka:
   client:
@@ -31,7 +35,4 @@ eureka:
 logging:
   level:
     root: INFO    
-# devtools
-devtools: 
-  restart: 
-    enabled: false
+
