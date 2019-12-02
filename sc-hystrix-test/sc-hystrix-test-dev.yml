@@ -31,3 +31,7 @@ eureka:
 logging:
   level:
     root: INFO    
+# devtools
+devtools: 
+  restart: 
+    enabled: false
