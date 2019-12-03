@@ -44,7 +44,7 @@ hystrix:
         execution:
           isolation:
             thread:
-              timeoutInMilliseconds: 5000    
+              timeoutInMilliseconds: 2000    
 feign: 
   httpclient: 
     # 使用apache httpclient
