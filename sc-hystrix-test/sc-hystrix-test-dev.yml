@@ -37,8 +37,8 @@ logging:
     root: INFO    
 # hystrix 启动并发策略(自定义属性)
 hystrix: 
-  concurrent_strategy:  
-    enabled: true
+  #concurrent_strategy:  
+  #  enabled: true
   command: 
     SampleServiceFeignClient#findByIdWithSleep(Long,Long): 
       execution:
@@ -46,15 +46,14 @@ hystrix:
           thread:
             timeoutInMilliseconds: 2000   
 feign: 
-  httpclient: 
+  #httpclient: 
     # 使用apache httpclient
-    enabled: true    
-    config: 
+#    enabled: true    
+    #config: 
       # 定义调用某个服务的feign设置,
-      sc-sampleservice: 
+      #sc-sampleservice: 
        # 读取超时时间(毫秒)
-       readTimeout: 2000    
+       #readTimeout: 2000    
   hystrix:  
     # 开启hystrix+feign  
-    enabled: true   
- 
+    enabled: true 
