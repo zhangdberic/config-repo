@@ -39,8 +39,11 @@ logging:
 hystrix: 
   concurrent_strategy:  
     enabled: true
-# 开启hystrix+feign
+
 feign: 
+  httpclient: 
+    # 使用apache httpclient
+    enabled: true    
   hystrix:  
-    enabled: true
-    
+    # 开启hystrix+feign  
+    enabled: true   
