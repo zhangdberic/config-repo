@@ -38,5 +38,5 @@ logging:
 # hystrix 启动并发策略
 hystrix: 
   concurrent_strategy:  
-    enabled: true
+    enabled: false
 
