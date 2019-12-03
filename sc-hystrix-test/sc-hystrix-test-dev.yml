@@ -39,12 +39,12 @@ logging:
 hystrix: 
   concurrent_strategy:  
     enabled: true
-  command:
-      default:
-        execution:
-          isolation:
-            thread:
-              timeoutInMilliseconds: 2000    
+  command: 
+    default: 
+      execution: 
+        isolation: 
+          thread: 
+            timeoutInMilliseconds: 2000 
 feign: 
   httpclient: 
     # 使用apache httpclient
@@ -53,8 +53,8 @@ feign:
     config: 
       # 定义全局的feign设置
       default: 
-        connectTimeout: 1000
-        readTimeout: 3000
+        connectTimeout: 1000 
+        readTimeout: 3000 
   hystrix:  
     # 开启hystrix+feign  
     enabled: true 
