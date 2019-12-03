@@ -49,6 +49,11 @@ feign:
   httpclient: 
     # 使用apache httpclient
     enabled: true    
+    config: 
+      # 定义调用某个服务的feign设置,
+      sc-sampleservice: 
+       # 读取超时时间(毫秒)
+       readTimeout: 2000    
   hystrix:  
     # 开启hystrix+feign  
     enabled: true   
