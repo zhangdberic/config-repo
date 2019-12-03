@@ -53,3 +53,15 @@ feign:
   hystrix:  
     # 开启hystrix+feign  
     enabled: true   
+hystrix:
+  command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 5000
+      findById:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 3000    
