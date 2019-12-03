@@ -56,13 +56,13 @@ feign:
       # 定义全局的feign设置
       default: 
         connectTimeout: 1000
-        readTimeout: 3000
+        #readTimeout: 3000
       # 定义调用某个服务的feign设置,
       sc-sampleservice: 
         # 配置连接超时时间(毫秒)
         connectTimeout: 5000
         # 读取超时时间(毫秒)
-        readTimeout: 10000
+        #readTimeout: 10000
         # 日志
         loggerLevel: full
         # 请求拦截器
@@ -85,13 +85,13 @@ feign:
       enabled: true
 # 配置ribbon属性
 # 1.配置某个服务的ribbon属性
-sc-sampleservice:
-  ribbon:
-    restclient: 
-      enabled: true  
+#sc-sampleservice:
+#  ribbon:
+#    restclient: 
+#      enabled: true  
     # 同一个实例最大重试测试，不包括首次调用
-    MaxAutoRetries: 0
+#    MaxAutoRetries: 0
     # 重试其它实例的最大次数(例如:部署了同一个服务3个实例,此处应该设置为2）,不包括首次调用所选的实例
-    MaxAutoRetriesNextServer: 1 
-    ReadTimeout: 4000
+#    MaxAutoRetriesNextServer: 1 
+    #ReadTimeout: 4000
     
