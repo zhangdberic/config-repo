@@ -35,4 +35,8 @@ eureka:
 logging:
   level:
     root: INFO    
+# hystrix 启动并发策略
+hystrix: 
+  concurrent_strategy:  
+    enabled: true
 
