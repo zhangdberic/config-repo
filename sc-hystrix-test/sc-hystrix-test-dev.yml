@@ -41,15 +41,16 @@ hystrix:
   #  enabled: true
   command: 
     #SampleServiceFeignClient#findByIdWithSleep(Long,Long): 
-    default:
-      execution:
-        isolation:
-          thread:
+    default: 
+      execution: 
+        isolation: 
+          thread: 
             timeoutInMilliseconds: 2000   
 feign: 
   httpclient: 
     # 使用apache httpclient
     enabled: true 
+  client:     
     config: 
       # 定义调用某个服务的feign设置,
       #sc-sampleservice: 
