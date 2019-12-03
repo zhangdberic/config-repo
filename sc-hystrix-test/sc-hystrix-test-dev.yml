@@ -55,7 +55,7 @@ feign:
       default: 
         connectTimeout: 1000
         readTimeout: 3000
-  hystrix:  
+  #hystrix:  
     # 开启hystrix+feign  
-    enabled: true   
+   # enabled: true   
  
