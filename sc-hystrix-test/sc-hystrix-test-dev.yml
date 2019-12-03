@@ -39,5 +39,17 @@ logging:
 hystrix: 
   concurrent_strategy:  
     enabled: true
- 
+feign: 
+  httpclient: 
+    # 使用apache httpclient
+    enabled: true    
+  client: 
+    config: 
+      # 定义全局的feign设置
+      default: 
+        connectTimeout: 1000
+        readTimeout: 3000
+  hystrix:  
+    # 开启hystrix+feign  
+    enabled: true   
  
