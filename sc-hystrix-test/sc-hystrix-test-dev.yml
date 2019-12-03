@@ -39,4 +39,8 @@ logging:
 hystrix: 
   concurrent_strategy:  
     enabled: true
-
+# 开启hystrix+feign
+feign: 
+  hystrix:  
+    enabled: true
+    
