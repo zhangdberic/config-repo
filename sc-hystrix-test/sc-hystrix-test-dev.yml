@@ -39,6 +39,17 @@ logging:
 hystrix: 
   concurrent_strategy:  
     enabled: true
+  command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 5000
+      findById:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 3000       
 
 feign: 
   httpclient: 
