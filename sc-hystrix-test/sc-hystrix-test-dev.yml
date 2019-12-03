@@ -39,6 +39,12 @@ logging:
 hystrix: 
   concurrent_strategy:  
     enabled: true
+  command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 5000    
 feign: 
   httpclient: 
     # 使用apache httpclient
