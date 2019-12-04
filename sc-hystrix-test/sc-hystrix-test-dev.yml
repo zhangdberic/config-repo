@@ -40,7 +40,7 @@ hystrix:
   concurrent_strategy:  
     enabled: true
   command:
-      default:
+      SampleServiceFeignClient#findByIdWithSleep(Long,Long):
         execution:
           isolation:
             thread:
