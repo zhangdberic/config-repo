@@ -43,20 +43,22 @@ logging:
 hystrix: 
   concurrent_strategy:  
     enabled: true
-  command: 
-    SampleServiceFeignClient#findByIdWithSleep(Long,Long):  
-      execution: 
-        isolation: 
-          thread: 
-            timeoutInMilliseconds: 2000   
+  command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 2000    
 feign: 
   httpclient: 
     # 使用apache httpclient
-    enabled: true 
-  client:     
+    enabled: true    
+  client: 
     config: 
+      # 定义全局的feign设置
       default: 
-        readTimeout: 2000 
+        connectTimeout: 1000
+        readTimeout: 3000
   hystrix:  
     # 开启hystrix+feign  
     enabled: true 
