@@ -54,7 +54,7 @@ feign:
       # 定义全局的feign设置
       sc-sampleservice: 
         connectTimeout: 1000
-        readTimeout: 3000
+        readTimeout: 2000
   hystrix:  
     # 开启hystrix+feign  
     enabled: true 
