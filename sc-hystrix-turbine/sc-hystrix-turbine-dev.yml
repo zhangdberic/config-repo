@@ -2,7 +2,6 @@ server:
   port: 28031
 # 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
 management:
-  port: 20011
   security:
     enabled: false  
 spring:
@@ -28,7 +27,6 @@ eureka:
   instance:
     # 基于ip地址注册到eureka         
     prefer-ip-address: true
-    non-secure-port: 28031
 # 日志    
 logging:
   level:
