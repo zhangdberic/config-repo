@@ -1,1 +1,9 @@
-1
+spring: 
+  http: 
+    encoding: 
+      charset: UTF-8
+      enabled: true
+      force: true
+server:
+  tomcat: 
+    uri-encoding: UTF-8
