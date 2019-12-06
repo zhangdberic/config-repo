@@ -3,8 +3,6 @@ server:
 # 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
 management:
   port: 20011
-  security:
-    enabled: false  
 spring:
   # java -D属性可以覆盖本远程参数
   cloud:
