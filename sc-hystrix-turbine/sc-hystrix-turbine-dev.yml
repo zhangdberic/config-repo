@@ -2,6 +2,7 @@ server:
   port: 8666
 # 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
 management:
+  port: 8990
   security:
     enabled: false  
 spring:
@@ -26,7 +27,8 @@ eureka:
       enabled: true
   instance:
     # 基于ip地址注册到eureka         
-    prefer-ip-address: true     
+    prefer-ip-address: true
+    non-secure-port: 8666
 # 日志    
 logging:
   level:
