@@ -35,3 +35,7 @@ eureka:
 logging:
   level:
     root: INFO 
+# 配置zuul->ribbon->使用APACHE HTTP Client
+ribbon: 
+  restclient:  
+    enabled: true
