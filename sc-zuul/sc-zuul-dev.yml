@@ -41,7 +41,7 @@ ribbon:
     enabled: true
 # 配置zuul
 zuul: 
-  ignore-services: '*' 
+  ignored-services: '*' 
   routes: 
     sc-sampleservice: /sampleservice/** 
 
