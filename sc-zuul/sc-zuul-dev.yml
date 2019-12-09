@@ -39,3 +39,9 @@ logging:
 ribbon: 
   restclient:  
     enabled: true
+# 配置zuul
+zuul: 
+  ignore-services: '*' 
+  routes: 
+    sc-sampleservice: /sampleservice/** 
+
