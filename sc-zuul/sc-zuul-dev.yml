@@ -15,6 +15,12 @@ spring:
     port: 5672
     username: admin
     password: Rabbitmq-401
+  http:   
+    multipart: 
+      # 整个请求大小限制(1个请求可能包括多个上传文件)
+      max-request-size: 20Mb
+      # 单个文件大小限制
+      max-file-size: 10Mb    
   # devtools
   devtools: 
     restart: 
