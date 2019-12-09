@@ -49,5 +49,7 @@ zuul:
   strip-prefix: true
   # 开放服务
   routes: 
-    sc-sampleservice: /sampleservice/** 
+    sc-sampleservice: 
+      path: /sampleservice/** 
+      sensitive-headers: Cookie,Set-Cookie,Authorization
 
