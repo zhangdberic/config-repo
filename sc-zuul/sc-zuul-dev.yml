@@ -41,7 +41,13 @@ ribbon:
     enabled: true
 # 配置zuul
 zuul: 
+  # 忽略所有的服务
   ignored-services: '*' 
+  # 指定请求前缀
+  prefix: /api
+  # 转发请求到服务时,是否去掉prefix前缀字符
+  strip-prefix: true
+  # 开放服务
   routes: 
     sc-sampleservice: /sampleservice/** 
 
