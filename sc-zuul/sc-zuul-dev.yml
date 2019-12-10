@@ -1,5 +1,11 @@
 server:
   port: 8090
+  # 设置zuul的tomcat参数
+  tomcat: 
+    max-connections: 1000
+    max-threads: 200
+    min-spare-threads: 10
+    accept-count: 50
 # 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
 management:
   security:
@@ -98,6 +104,8 @@ sc-sampleservice:
   ribbon:
     ReadTimeout: 10000
     ConnectTimeout: 1000
+
+
 
   
 
