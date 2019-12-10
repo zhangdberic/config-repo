@@ -83,7 +83,7 @@ hystrix:
       #coreSize: 3
 # 为某个服务单独设置ribbon      
 sc-sampleservice:
-  ribbon: 
+  ribbon:
     ReadTimeout: 1500
     ConnectTimeout: 1000
     
