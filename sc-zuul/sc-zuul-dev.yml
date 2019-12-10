@@ -67,5 +67,8 @@ zuul:
   forceOriginalQueryStringEncoding: true
   # 修改zull hystrix的隔离策略为thread(默认为SEMAPHORE)
   ribbon-isolation-strategy: thread
+  threadPool: 
+    useSeparateThreadPools: true
+    
   
 
