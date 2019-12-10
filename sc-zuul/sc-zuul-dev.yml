@@ -69,7 +69,37 @@ zuul:
   #ribbon-isolation-strategy: thread
   #threadPool: 
     #useSeparateThreadPools: true
+  # 非ribbon请求下转发请求设置    
+  host:
+    socket-timeout-millis: 10000
+    connect-timeout-millis: 1000    
+  # 设置最大信号量
+  semaphore: 
+    max-semaphores: 100 
+  # 设置某个服务的最大信号量
+  eureka: 
+    sc-sampleservice: 
+      semaphore:
+        max-semaphores: 50 
+# 设置hystrix    
+hystrix: 
+  command:
+    # 为某个服务单独设置(需要公式计算,见文档)
+    sc-sampleservice:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 22000     
+  #threadpool: 
+    #sc-sampleservice: 
+      #coreSize: 3
+# 为某个服务单独设置ribbon      
+sc-sampleservice:
+  ribbon:
+    ReadTimeout: 10000
+    ConnectTimeout: 1000
 
-    
+  
+
   
 
