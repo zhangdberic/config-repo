@@ -63,4 +63,6 @@ zuul:
     # 修改为启动加载(默认为懒加载)
     eager-load: 
       enabled: true
+  # queryString保持一致
+  forceOriginalQueryStringEncoding: true
 
