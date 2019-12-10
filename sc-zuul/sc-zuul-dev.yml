@@ -84,6 +84,8 @@ hystrix:
 # 为某个服务单独设置ribbon      
 sc-sampleservice:
   ribbon:
+    restclient: 
+      enabled: true  
     ReadTimeout: 1500
     ConnectTimeout: 1000
     
