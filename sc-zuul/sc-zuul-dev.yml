@@ -57,5 +57,10 @@ zuul:
   routes: 
     sc-sampleservice: 
       path: /sampleservice/** 
+      # 允许铭感的请求头通过到服务
       sensitive-headers: Cookie,Set-Cookie,Authorization
+  ribbon: 
+    # 修改为启动加载(默认为懒加载)
+    eager-load: 
+      enabled: true
 
