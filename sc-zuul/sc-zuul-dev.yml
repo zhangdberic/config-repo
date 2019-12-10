@@ -72,21 +72,19 @@ zuul:
 # 设置hystrix    
 hystrix: 
   command:
-    # 为某个服务单独设置
+    # 为某个服务单独设置(需要公式计算,见文档)
     sc-sampleservice:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 1500     
+            timeoutInMilliseconds: 22000     
   #threadpool: 
     #sc-sampleservice: 
       #coreSize: 3
 # 为某个服务单独设置ribbon      
 sc-sampleservice:
   ribbon:
-    restclient: 
-      enabled: true  
-    ReadTimeout: 1500
+    ReadTimeout: 10000
     ConnectTimeout: 1000
     
   
