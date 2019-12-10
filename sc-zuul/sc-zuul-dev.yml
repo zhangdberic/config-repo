@@ -69,23 +69,7 @@ zuul:
   #ribbon-isolation-strategy: thread
   #threadPool: 
     #useSeparateThreadPools: true
-# 设置hystrix    
-hystrix: 
-  command:
-    # 为某个服务单独设置(需要公式计算,见文档)
-    sc-sampleservice:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 22000     
-  #threadpool: 
-    #sc-sampleservice: 
-      #coreSize: 3
-# 为某个服务单独设置ribbon      
-sc-sampleservice:
-  ribbon:
-    ReadTimeout: 10000
-    ConnectTimeout: 1000
+
     
   
 
