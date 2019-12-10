@@ -66,19 +66,26 @@ zuul:
   # queryString保持一致
   forceOriginalQueryStringEncoding: true
   # 修改zull hystrix的隔离策略为thread(默认为SEMAPHORE)
-  ribbon-isolation-strategy: thread
-  threadPool: 
-    useSeparateThreadPools: true
-    
+  #ribbon-isolation-strategy: thread
+  #threadPool: 
+    #useSeparateThreadPools: true
+# 设置hystrix    
 hystrix: 
   command:
+    # 为某个服务单独设置
     sc-sampleservice:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 2000     
-  threadpool: 
-    sc-sampleservice: 
-      coreSize: 3
+            timeoutInMilliseconds: 1500     
+  #threadpool: 
+    #sc-sampleservice: 
+      #coreSize: 3
+# 为某个服务单独设置ribbon      
+sc-sampleservice:
+  ribbon: 
+    ReadTimeout: 1500
+    ConnectTimeout: 1000
+    
   
 
