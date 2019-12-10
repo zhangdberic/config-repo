@@ -70,5 +70,15 @@ zuul:
   threadPool: 
     useSeparateThreadPools: true
     
+hystrix: 
+  command:
+    sc-sampleservice:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2000     
+  threadpool: 
+    sc-sampleservice: 
+      coreSize: 3
   
 
