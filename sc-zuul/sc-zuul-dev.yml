@@ -65,6 +65,10 @@ zuul:
       path: /sampleservice/** 
       # 允许铭感的请求头通过到服务
       sensitive-headers: Cookie,Set-Cookie,Authorization
+    # 测试整合其它非eureka上的服务  
+    dongyuit:
+      path: /dongyuit/**
+      service-id: dongyuit
   ribbon: 
     # 修改为启动加载(默认为懒加载)
     eager-load: 
@@ -104,6 +108,13 @@ sc-sampleservice:
   ribbon:
     ReadTimeout: 10000
     ConnectTimeout: 1000
+# 测试整合其它非eureka上的服务
+dongyuit:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: 
+      121.42.175.3:80
 
 
 
