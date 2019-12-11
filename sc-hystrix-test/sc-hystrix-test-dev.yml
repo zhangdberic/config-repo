@@ -44,7 +44,7 @@ hystrix:
         execution:
           isolation:
             thread:
-              timeoutInMilliseconds: 2000    
+              timeoutInMilliseconds: 60000    
 feign: 
   httpclient: 
     # 使用apache httpclient
@@ -54,7 +54,7 @@ feign:
       # 定义全局的feign设置
       sc-sampleservice: 
         connectTimeout: 1000
-        readTimeout: 2000
+        readTimeout: 60000
   hystrix:  
     # 开启hystrix+feign  
     enabled: true 
