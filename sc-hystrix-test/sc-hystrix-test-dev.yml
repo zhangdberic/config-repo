@@ -1,5 +1,8 @@
 server:
   port: 8300
+  tomcat: 
+    max-threads: 1
+    min-spare-threads: 1
 # 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
 management:
   security:
