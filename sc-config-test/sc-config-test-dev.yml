@@ -35,9 +35,11 @@ eureka:
 logging:
   level:
     root: INFO      
-# 测试属性在线刷新    
+# 测试的配置属性
 config:
   property:
+    # 在线刷新
     refreshProperty1: 马应龙唇膏
+    # 加密属性(原文为123)
     encryptedProperty2: '{cipher}2e2674efca5bf456f034872fe890686814e0979474781fc2cee9054d305ca067'
  
