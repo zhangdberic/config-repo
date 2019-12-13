@@ -39,4 +39,5 @@ logging:
 config:
   property:
     refreshProperty1: 马应龙唇膏
+    encryptedProperty2: '{cipher}2e2674efca5bf456f034872fe890686814e0979474781fc2cee9054d305ca067'
  
