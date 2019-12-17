@@ -2,12 +2,21 @@ server:
   port: 8680
 # zipkin server
 zipkin:
+  # zipkin数据收集
   collector:
     rabbitmq:
       addresses: 192.168.5.29:5672
       username: admin
       password: Rabbitmq-401
-      queue: zipkin  
+      queue: zipkin
+  # zipkin数据存储    
+  storage:
+    type: elasticsearch
+    cluster: elasticsearch
+    hosts: http://192.168.5.78:9200
+    index: zipkin
+    index-shards: 5
+    index-replicas: 1
 # 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
 management:
   security:
