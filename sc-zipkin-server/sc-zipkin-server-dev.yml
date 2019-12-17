@@ -22,8 +22,12 @@ spring:
       enabled: false    
   # zipkin
   zipkin:
-    rabbitmq:
-      queue: zipkin
+    collector:
+      rabbitmq:
+        addresses: 192.168.5.29:5672
+        username: admin
+        password: Rabbitmq-401
+        queue: zipkin
 # eureka客户端    
 eureka:
   client:
