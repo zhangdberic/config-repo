@@ -1,5 +1,13 @@
 server:
   port: 8680
+# zipkin server
+zipkin:
+  collector:
+    rabbitmq:
+      addresses: 192.168.5.29:5672
+      username: admin
+      password: Rabbitmq-401
+      queue: zipkin  
 # 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
 management:
   security:
@@ -20,14 +28,6 @@ spring:
   devtools: 
     restart: 
       enabled: false    
-  # zipkin
-  zipkin:
-    collector:
-      rabbitmq:
-        addresses: 192.168.5.29:5672
-        username: admin
-        password: Rabbitmq-401
-        queue: zipkin
 # eureka客户端    
 eureka:
   client:
