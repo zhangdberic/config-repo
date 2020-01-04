@@ -37,7 +37,7 @@ logging:
     root: INFO    
 
 # sso　认证配置
-oauth2-server: http://DY-OAUTH
+oauth2-server: http://SC-OAUTH2
 
 security:
   oauth2:
