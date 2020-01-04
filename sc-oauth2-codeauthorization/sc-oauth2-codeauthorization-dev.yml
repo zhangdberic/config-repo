@@ -1,0 +1,56 @@
+server:
+  port: 6002
+# 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
+management:
+  security:
+    enabled: false    
+spring:
+  # java -D属性可以覆盖本远程参数
+  cloud:
+    config:
+      overrideSystemProperties: false
+  # 和spring-cloud-starter-bus-amqp配合,用于/bus/refresh分布式服务属性刷新
+  rabbitmq:
+    host: 192.168.5.29
+    port: 5672
+    username: admin
+    password: Rabbitmq-401    
+  # devtools
+  devtools: 
+    restart: 
+      enabled: false    
+# eureka客户端    
+eureka:
+  client:
+    service-url:
+      # 基于Basic的Security的访问eureka服务器
+      defaultZone: http://sc-eureka:veDSJeUX-JSxkWrk@192.168.5.78:8070/eureka/,http://sc-eureka:veDSJeUX-JSxkWrk@192.168.5.78:8071/eureka/
+    # 客户端监控检查(定时检查并发送健康状态到eureka服务器)  
+    healthcheck:
+      enabled: true
+  instance:
+    # 基于ip地址注册到eureka         
+    prefer-ip-address: true     
+# 日志    
+logging:
+  level:
+    root: INFO    
+
+# sso　认证配置
+oauth2-server: http://DY-OAUTH
+
+security:
+  oauth2:
+    client:
+     # grant-type: client_credentials    # 授权模式
+      client-id: test_client        # 在oauth 服务端注册的client-id
+      client-secret: 123456     # 在oauth 服务端注册的secret
+      access-token-uri: ${oauth2-server}/oauth/token    #获取token 地址
+      user-authorization-uri: ${oauth2-server}/oauth/authorize  # 认证地址
+      scope: web
+    resource:
+      loadBalanced: true
+      token-info-uri: ${oauth2-server}/oauth/check_token  # 检查token
+      user-info-uri: ${oauth2-server}/auth/user   # 用户信息
+    sso:
+      login-path: /login   
