@@ -53,7 +53,7 @@ eureka:
   client:
     service-url:
       # 基于Basic的Security的访问eureka服务器
-      defaultZone: http://dy-eureka:WEJa2w-LHrZKH@192.168.5.78:8070/eureka/
+      defaultZone: http://sc-eureka:veDSJeUX-JSxkWrk@192.168.5.78:8070/eureka/,http://sc-eureka:veDSJeUX-JSxkWrk@192.168.5.78:8071/eureka/
     # 客户端监控检查(定时检查并发送健康状态到eureka服务器)  
     healthcheck:
       enabled: true
