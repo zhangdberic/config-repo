@@ -44,7 +44,7 @@ logging:
     root: INFO    
 
 # sso　认证配置
-oauth2-server: http://SC-OAUTH2
+# oauth2-server: http://SC-OAUTH2
 
 security:
   oauth2:
@@ -52,12 +52,12 @@ security:
      # grant-type: client_credentials    # 授权模式
       client-id: test_client        # 在oauth 服务端注册的client-id
       client-secret: 123456     # 在oauth 服务端注册的secret
-      access-token-uri: ${oauth2-server}/oauth/token    #获取token 地址
-      user-authorization-uri: ${oauth2-server}/oauth/authorize  # 认证地址
+      access-token-uri: http://SC-OAUTH2/oauth/token    #获取token 地址
+      user-authorization-uri: http://SC-OAUTH2/oauth/authorize  # 认证地址
       scope: web
     resource:
       loadBalanced: true
-      token-info-uri: ${oauth2-server}/oauth/check_token  # 检查token
-      user-info-uri: ${oauth2-server}/auth/user   # 用户信息
+      token-info-uri: http://SC-OAUTH2/oauth/check_token  # 检查token
+      user-info-uri: http://SC-OAUTH2/auth/user   # 用户信息
 
 
