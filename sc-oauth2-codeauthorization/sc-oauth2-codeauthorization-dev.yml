@@ -59,5 +59,6 @@ security:
       loadBalanced: true
       token-info-uri: http://SC-OAUTH2/oauth/check_token  # 检查token
       user-info-uri: http://SC-OAUTH2/auth/user   # 用户信息
-
+    sso:
+      login-path: /member/list
 
