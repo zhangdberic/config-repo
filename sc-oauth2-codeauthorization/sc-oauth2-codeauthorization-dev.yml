@@ -52,8 +52,8 @@ security:
      # grant-type: client_credentials    # 授权模式
       client-id: test_client        # 在oauth 服务端注册的client-id
       client-secret: 123456     # 在oauth 服务端注册的secret
-      access-token-uri: http://SC-OAUTH2/oauth/token    #获取token 地址
-      user-authorization-uri: http://SC-OAUTH2/oauth/authorize  # 认证地址
+      access-token-uri: http://localhost:6001/oauth/token    #获取token 地址
+      user-authorization-uri: http://localhost:6001/oauth/authorize  # 认证地址
       scope: web
     resource:
       loadBalanced: true
