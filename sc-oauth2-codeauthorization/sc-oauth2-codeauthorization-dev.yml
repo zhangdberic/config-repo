@@ -44,7 +44,7 @@ logging:
     root: INFO    
 
 # sso　认证配置
-# oauth2-server: http://SC-OAUTH2
+#oauth2-server: http://SC-OAUTH2
 
 security:
   oauth2:
@@ -60,5 +60,5 @@ security:
       token-info-uri: http://SC-OAUTH2/oauth/check_token  # 检查token
       user-info-uri: http://SC-OAUTH2/auth/user   # 用户信息
     sso:
-      login-path: /member/list
+      login-path: /index.html
 
