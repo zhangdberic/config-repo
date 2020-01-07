@@ -42,6 +42,7 @@ eureka:
 logging:
   level:
     root: INFO    
+    org.springframework.security: DEBUG
 
 # sso　认证配置
 #oauth2-server: http://SC-OAUTH2
