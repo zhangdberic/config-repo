@@ -2,7 +2,7 @@ server:
   port: 6002
   session:
     cookie:
-      name: testclient1
+      name: testclient
 # 关闭安全认证,否则actuator提供的url访问报错401,例如:/refresh或/evn等.  
 management:
   security:
