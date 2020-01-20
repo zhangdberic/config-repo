@@ -49,7 +49,7 @@ security:
   oauth2:
     client:
       grant-type: code_credentials    # 代码授权模式
-      client-id: test_client        # 在oauth 服务端注册的client-id
+      client-id: test_client1        # 在oauth 服务端注册的client-id
       client-secret: 123456     # 在oauth 服务端注册的secret
       access-token-uri: ${oauth2-server}/oauth/token    #获取token 地址
       user-authorization-uri: ${oauth2-server}/oauth/authorize  # 认证地址
